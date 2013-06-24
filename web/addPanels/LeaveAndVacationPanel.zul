@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <groupbox closable="false" style="border-bottom: none">
+        <caption label="Leave And Vacation"/>
+        <grid>
+            <columns>
+                <column width="120px"/>
+                <column/>
+            </columns>
+            <rows>
+                <row>
+                    <label value="Leave Type"/>
+                    <bandbox constraint="no empty">
+                        <bandpopup>
+
+                        </bandpopup>
+                    </bandbox>
+                </row>
+                <row>
+                    <label value="Start date"/>
+                    <datebox format="yyyy/MM/dd" constraint="no empty"/>
+                </row>
+                <row>
+                    <label value="End date"/>
+                    <datebox format="yyyy/MM/dd" constraint="no empty"/>
+                </row>
+                <row>
+                    <label value="No.of days"/>
+                    <intbox constraint="no empty , no zero , no negative"/>
+                </row>
+                <row>
+                    <label value="IsPay"/>
+                    <checkbox/>
+                </row>
+            </rows>
+        </grid>
+    </groupbox>
+</zk>

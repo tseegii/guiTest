@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <groupbox closable="false" style="border-bottom: none">
+        <caption label="Overtime"/>
+        <grid >
+             <columns>
+                 <column label="Work Date"/>
+                 <column label="Hours"/>
+                 <column label="Is Holiday"/>
+             </columns>
+            <rows>
+                <row>
+                    <datebox constraint="no empty" format="yyyy/MM/dd"  />
+                    <intbox constraint="no empty , no negative , no zero" width="90%"  />
+                    <cell align="center">
+
+                        <checkbox  value="isholiday" />
+                    </cell>
+                </row>
+            </rows>
+        </grid>
+    </groupbox>
+</zk>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="departmentWindow" border="normal" title="Department" width="500px" height="400px" mode="modal"
+            closable="true" use="">
+        <borderlayout>
+            <north height="130px">
+                <borderlayout>
+                    <center border="none">
+                        <grid style="border: none">
+                            <columns>
+                                <column width="120px"/>
+                                <column/>
+                            </columns>
+                            <rows>
+                                <row>
+                                    <label value="Department Id"/>
+                                    <textbox  value="@{departmentWindow.departmentId}"
+                                              constraint="no empty" width="98%"/>
+                                </row>
+
+                                <row>
+                                    <label value="Department Title"/>
+                                    <textbox  value="@{departmentWindow.departmentTitle}"
+                                              constraint="no empty" width="98%"/>
+                                </row>
+                                <row>
+                                    <label value="Department Desc"/>
+                                    <textbox  value="@{departmentWindow.departmentDescription}"
+                                              constraint="no empty" width="98%"/>
+                                </row>
+                            </rows>
+                        </grid>
+                    </center>
+                    <south border="none">
+                        <div align="right">
+                            <hlayout>
+                                <button image="" label="Save" onClick=""/>
+                                <button image="" label="Reset" onClick=""/>
+                            </hlayout>
+                        </div>
+                    </south>
+                </borderlayout>
+            </north>
+            <center>
+                <grid>
+
+                    <columns>
+                        <column label="Department Id" />
+                        <column label="Department Title" />
+                        <column label="Department Desc" />
+                        <column label="Manage Department" />
+                    </columns>
+                    <rows>
+                       <!--todo department list double click edit-->
+                       <!--todo headsiig songodog windowiig duudaj department headiig songono 4 deg bagana deer darhad garch irne-->
+                    </rows>
+                </grid>
+            </center>
+        </borderlayout>
+    </window>
+</zk>

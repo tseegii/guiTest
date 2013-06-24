@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="requestWindow" border="normal" title="Request" width="400px" height="400px" mode="modal"
+            closable="true" use="">
+        <borderlayout>
+            <center border="none">
+                <borderlayout>
+                    <center>
+                        <grid style="border: none">
+                            <columns>
+                                <column width="150px"/>
+                                <column/>
+                            </columns>
+                            <rows>
+                                <row>
+                                    <label value="Sender Id"/>
+                                    <textbox value="@{requestWindow.senderId}" constraint="no empty" width="95%"/>
+                                </row>
+                                <row>
+                                    <label value="Request Type"/>
+                                    <bandbox value="@{requestWindow.requestTypeId}" constraint="no empty" width="95%">
+                                        <bandpopup>
+                                        </bandpopup>
+                                    </bandbox>
+                                </row>
+                                <row>
+                                    <label value="Request Details"/>
+                                    <textbox rows="3" value="@{requestWindow.requestDetail}"/>
+                                </row>
+                            </rows>
+                        </grid>
+                    </center>
+                    <south height="200px">
+                        <!--<include src="OvertimePanel.zul"/>-->
+                        <include src="LeaveAndVacationPanel.zul"/>
+                    </south>
+                </borderlayout>
+            </center>
+            <south border="none">
+                <div align="right">
+                    <hlayout>
+                        <button image="" label="Save" onClick=""/>
+                        <button image="" label="Cancel"
+                                onClick="Events.postEvent(Events.ON_CLOSE,attendanceWindow,null);"/>
+                    </hlayout>
+                </div>
+            </south>
+        </borderlayout>
+    </window>
+</zk>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="departmentHeadManageWindow" border="normal" title="Department Head" width="350px" height="250px"
+            mode="modal"
+            closable="true" use="">
+        <borderlayout>
+            <center border="none">
+                <grid style="border: none">
+                    <columns>
+                        <column width="120px"/>
+                        <column/>
+                    </columns>
+                    <rows>
+                        <row>
+                            <label value="Employees"/>
+                            <bandbox value="@{departmentHeadManageWindow.employeeId}"
+                                     constraint="no empty" width="98%">
+                                <bandpopup>
+
+                                </bandpopup>
+                            </bandbox>
+                            <!--todo dynamic add row-->
+                        </row>
+                    </rows>
+                </grid>
+            </center>
+            <south border="none">
+                <div align="right">
+                    <hlayout>
+                        <button image="" label="Save" onClick=""/>
+                        <button image="" label="Cancel" onClick=""/>
+                    </hlayout>
+                </div>
+            </south>
+        </borderlayout>
+
+    </window>
+</zk>

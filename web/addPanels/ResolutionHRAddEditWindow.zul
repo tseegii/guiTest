@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="resolutionWindow" border="normal" title="Resolution" width="400px" height="280px" mode="modal"
+            closable="true" use="">
+        <borderlayout>
+            <center border="none">
+                <grid>
+                    <columns>
+                        <column width="150px"/>
+                        <column/>
+                    </columns>
+                    <rows>
+                        <row>
+                            <label value="Resolution Id"/>
+                            <textbox value="@{resolutionWindow.resolutionId}" constraint="no empty" width="95%"/>
+                        </row>
+                        <row>
+                            <label value="Resolution Type"/>
+                            <textbox value="@{resolutionWindow.resolutionType}" constraint="no empty" width="95%"/>
+                        </row>
+
+                        <row>
+                            <label value="File"/>
+                            <fileupload label="browse" value="@{resolutionWindow.resolutionFile}" />
+                        </row>
+                        <row >
+                            <label value="Department"/>
+                            <bandbox constraint="no empty" width="98%" value="@{resolutionWindow.departmentId}">
+                                <bandpopup>
+
+                                </bandpopup>
+                            </bandbox>
+                        </row>
+                        <row>
+                            <label value="IsDepartment"/>
+                            <checkbox checked="true" id="isDepartment" value="@{probationWindow.isActive}" onCheck="hideResolution()"/>
+                        </row>
+                        <row id="resolutionEmployees" visible="false">
+                            <label value="Employees"/>
+                            <bandbox constraint="no empty" width="98%" value="@{resolutionWindow.employeeId}">
+                                <bandpopup>
+
+                                </bandpopup>
+                            </bandbox>
+                        </row>
+                    </rows>
+                </grid>
+                <zscript>
+                    void hideResolution(){
+                    if(isDepartment.isChecked()){
+                    resolutionEmployees.setVisible(false);
+                    }else{
+                    resolutionEmployees.setVisible(true);
+                    }
+                    }
+                </zscript>
+            </center>
+            <south border="none">
+                <div align="right">
+                    <hlayout>
+                        <button image="" label="Save" onClick=""/>
+                        <button image="" label="Cancel"
+                                onClick="Events.postEvent(Events.ON_CLOSE,attendanceWindow,null);"/>
+                    </hlayout>
+                </div>
+            </south>
+        </borderlayout>
+    </window>
+</zk>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="usersManageWindow" border="normal" title="Users Manage" width="300px" height="280px" mode="modal"
+            closable="true" use="">
+        <borderlayout>
+            <center border="none">
+                <grid>
+                    <columns>
+                        <column width="100px"/>
+                        <column/>
+                    </columns>
+                    <rows>
+                        <row>
+                            <label value="Email"/>
+                            <textbox constraint="no empty" width="95%"/>
+                        </row>
+                        <row>
+                            <label value="Password"/>
+                            <textbox constraint="no empty" type="password" width="95%"
+                                     value="@{usersManageWindow.password}"/>
+                        </row>
+                        <row>
+                            <label value="Re-Password"/>
+                            <textbox constraint="no empty" type="password" width="95%"
+                                     value="@{usersManageWindow.rePassword}"/>
+                        </row>
+                        <row>
+                            <label value="Role"/>
+                            <bandbox constraint="no empty" width="98%" value="@{usersManageWindow.roleId}">
+                                <bandpopup>
+
+                                </bandpopup>
+                            </bandbox>
+                        </row>
+                        <row>
+                            <label value="Is Locked"/>
+                            <checkbox/>
+                        </row>
+                        <row>
+                            <label value="Employees"/>
+                            <bandbox constraint="no empty" width="98%" value="@{usersManageWindow.employeeId}">
+                                <bandpopup>
+
+                                </bandpopup>
+                            </bandbox>
+                        </row>
+                    </rows>
+                </grid>
+            </center>
+            <south border="none">
+                <div align="right">
+                    <hlayout>
+                        <button image="" label="Save" onClick=""/>
+                        <button image="" label="Cancel" onClick=""/>
+                    </hlayout>
+                </div>
+            </south>
+        </borderlayout>
+    </window>
+</zk>

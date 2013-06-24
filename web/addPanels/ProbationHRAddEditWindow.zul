@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="probationWindow" border="normal" title="Probation" width="400px" height="280px" mode="modal"
+            closable="true" use="">
+        <borderlayout>
+            <center border="none">
+                <grid>
+                    <columns>
+                        <column width="80px"/>
+                        <column/>
+                    </columns>
+                    <rows>
+                        <row>
+                            <label value="Start Date"/>
+                            <datebox format="yyyy/MM/dd" value="@{probationWindow.startDate}"
+                                     constraint="no empty" width="98%"/>
+                        </row>
+
+                        <row>
+                            <label value="End Date"/>
+                            <datebox format="yyyy/MM/dd" value="@{probationWindow.endDate}"
+                                     constraint="no empty" width="98%"/>
+                        </row>
+                        <row>
+                            <label value="Employees"/>
+                            <bandbox constraint="no empty" width="98%" value="@{probationWindow.employeeId}">
+                                <bandpopup>
+
+                                </bandpopup>
+                            </bandbox>
+                        </row>
+                        <row>
+                            <label value="Reason"/>
+                            <textbox rows="3" constraint="no empty" width="95%" value="@{probationWindow.probationReason}"/>
+                        </row>
+                        <row>
+                            <label value="Active"/>
+                            <checkbox checked="true" value="@{probationWindow.isActive}"/>
+                        </row>
+                    </rows>
+                </grid>
+            </center>
+            <south border="none">
+                <div align="right">
+                    <hlayout>
+                        <button image="" label="Save" onClick=""/>
+                        <button image="" label="Cancel"
+                                onClick="Events.postEvent(Events.ON_CLOSE,attendanceWindow,null);"/>
+                    </hlayout>
+                </div>
+            </south>
+        </borderlayout>
+    </window>
+</zk>

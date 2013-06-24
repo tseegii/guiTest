@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="resumeWindow" border="normal" title="Resume" width="400px" height="250px" mode="embedded"
+            closable="true" use="" >
+        <borderlayout>
+            <center border="none">
+                <grid>
+                    <columns>
+                        <column width="80px"/>
+                        <column/>
+                    </columns>
+                    <rows>
+                        <row>
+                            <label value="File"/>
+                            <fileupload label="browse" onUpload="img.setContent(event.media)"/>
+                        </row>
+
+                        <row>
+                            <label value="Email"/>
+                            <textbox constraint="no empty" width="95%" value="@{resumeWindow.email}"/>
+                        </row>
+                        <row>
+                            <label value="Position"/>
+                            <bandbox constraint="no empty" width="98%" value="@{resumeWindow.positionId}">
+                                <bandpopup>
+
+                                </bandpopup>
+                            </bandbox>
+                        </row>
+                        <row>
+                            <label value="Note"/>
+                            <textbox rows="3"  width="95%" value="@{resumeWindow.note}"/>
+                        </row>
+                    </rows>
+                </grid>
+            </center>
+            <south border="none">
+                <div align="right">
+                    <hlayout>
+                        <button image="" label="Send" onClick=""/>
+                        <button image="" label="Back" href="javascript:history.go(-1)"/>
+                    </hlayout>
+                </div>
+            </south>
+        </borderlayout>
+    </window>
+</zk>
