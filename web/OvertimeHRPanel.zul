@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+
+    <panel width="100%" height="100%" title="Илүү Цаг">
+
+        <toolbar>
+
+            <toolbarbutton label="Нэмэх" onClick="" image=""/>
+            <label value="Date Range :"/>
+            <datebox/>
+            <label value=" - "/>
+            <datebox/>
+
+
+            <!--<separator/>-->
+            <label value="Хайлт : "/>
+            <combobox name="searchField">
+                <comboitem label="Нэр"/>
+                <comboitem label="Хэлтэс"/>
+                <comboitem label="Албан тушаал"/>
+                <comboitem label="Утас"/>
+                <comboitem label="Email"/>
+            </combobox>
+            <textbox name="searchTxt"/>
+            <toolbarbutton label="Шинэчлэх"/>
+        </toolbar>
+
+        <panelchildren>
+
+            <grid>
+                <columns context="editPopup">
+                    <column label="Огноо"/>
+                    <column label="Цаг"/>
+                    <column label="Баярын өдөр"/>
+                    <column label="Шалтгаан"/>
+                </columns>
+                <rows>
+                    <row>
+
+                        <!--todo overtime jagsaalt orj irne-->
+                        <!--todo employee group hiine-->
+                    </row>
+                </rows>
+            </grid>
+            <menupopup id="editPopup">
+                <menuitem label="Detail" onClick="" image=""/>
+            </menupopup>
+        </panelchildren>
+
+    </panel>
+
+</zk>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <panel width="100%" height="100%" title="Probation">
+        <toolbar>
+            <toolbarbutton label="Нэмэх" onClick="" image=""/>
+            <toolbarbutton label="Засах" onClick="" image=""/>
+            <toolbarbutton label="Шинэчлэх" onClick="" image=""/>
+        </toolbar>
+        <panelchildren>
+            <grid>
+                <columns context="editPopup">
+                    <column label="Нэр"/>
+                    <column label="Эхлэх Огноо"/>
+                    <column label="Дуусах Огноо"/>
+                    <column label="Шалтгаан"/>
+                </columns>
+                <rows>
+                    <row>
+                        <!--todo auto decactive active color toi bolgoh-->
+                        <!--todo probation jagsaalt orj irne-->
+                        <!--todo employee group hiine-->
+                    </row>
+                </rows>
+            </grid>
+        </panelchildren>
+    </panel>
+</zk>

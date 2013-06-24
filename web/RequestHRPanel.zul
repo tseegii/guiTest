@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <panel width="100%" height="100%" title="Санал хүсэлт">
+        <toolbar>
+            <toolbarbutton label="Нэмэх" onClick="" image=""/>
+            <!--<separator/>-->
+            <label value="Шүүх : "/>
+            <combobox name="statusField" >
+                <comboitem label="Баталгаажсан"/>
+                <comboitem label="Өөрт ирсэн"/>
+                <comboitem label="Өөрийн гаргасан"/>
+            </combobox>
+            <label value="Хайлт : "/>
+            <combobox name="searchField" >
+                <comboitem label="Хэнээс"/>
+                <comboitem label="Хэнрүү"/>
+                <comboitem label="Төрөл"/>
+                <comboitem label="Хэлтэс"/>
+                <comboitem label="Огноо"/>
+                <comboitem label="Төлөв"/>
+                <comboitem label="Тэмдэглэл"/>
+                <comboitem label="Нэр"/>
+            </combobox>
+            <textbox name="searchTxt"/>
+            <toolbarbutton label="Шинэчлэх"/>
+        </toolbar>
+
+        <panelchildren>
+
+            <grid>
+                <columns context="editPopup">
+                    <column label="Хэнээс"/>
+                    <column label="Хэнрүү"/>
+                    <column label="Төрөл"/>
+                    <column label="Огноо"/>
+                    <column label="Төлөв"/>
+                    <column label="Нэр"/>
+                </columns>
+                <rows>
+                    <row>
+
+                        <!--todo ajilchdiin jagsaalt orj irne-->
+                        <!--todo c menu soligdoh bargal java -->
+                        <!--department group hiine-->
+                    </row>
+                </rows>
+            </grid>
+            <menupopup id="editPopup">
+                <menuitem label="Detail" onClick="" image=""/>
+                <menuitem label="Approved" onClick="" image=""/>
+            </menupopup>
+        </panelchildren>
+    </panel>
+</zk>

@@ -1,0 +1,41 @@
+<zk xmlns="http://www.zkoss.org/2005/zul" >
+    <window id="loginWindow" title="Нэвтрэх Хэсэг" border="normal" mode="overlapped"
+            position="center">
+        <vlayout>
+            <label if="${not empty param.login_error}" style="color:#BB0000">
+                ${labels.core.loginWindow.loginError}
+                <!--${SPRING_SECURITY_LAST_EXCEPTION.message}-->
+            </label>
+            <hlayout>
+                <image src="images/login-window-150px.png" height="113px" style="border:1px solid #cccccc;"/>
+                    <grid width="320px" height="138px">
+                        <columns>
+                            <column width="150px"/>
+                            <column/>
+                        </columns>
+                        <rows>
+                            <row height="34px">
+                                <label value="Хэрэглэгчийн нэр"/>
+                                <textbox id="userCode" name="j_username" width="96%" focus="true"/>
+                            </row>
+                            <row height="34px">
+                                <label value="Нууц үг"/>
+                                <textbox id="password" name="j_password" width="96%" type="password"/>
+                            </row>
+                            <row >
+                                <cell colspan="2" style="text-align: right;font-size: 8px">
+                                    <label value="Forget password ?"/>
+                                </cell>
+                            </row>
+                            <row height="32px">
+                                <cell align="right" colspan="2">
+                                    <button id="btnLogin" label="Нэвтрэх"
+                                            image="images/login-16px.png" />
+                                </cell>
+                            </row>
+                        </rows>
+                    </grid>
+            </hlayout>
+        </vlayout>
+    </window>
+</zk>

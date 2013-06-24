@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <panel width="100%" height="100%" title="Чөлөө">
+        <toolbar>
+            <toolbarbutton label="Нэмэх" onClick="" image=""/>
+            <!--<separator/>-->
+            <label value="Хайлт : "/>
+            <combobox name="searchField">
+                <comboitem label="Төрөл"/>
+                <comboitem label="Эхлэх Огноо"/>
+                <comboitem label="Дуусах Огноо"/>
+                <comboitem label="Төлөх"/>
+                <comboitem label="Шалтгаан"/>
+            </combobox>
+            <textbox name="searchTxt"/>
+            <toolbarbutton label="Шинэчлэх"/>
+        </toolbar>
+
+        <panelchildren>
+
+            <grid>
+                <columns context="editPopup">
+                    <column label="Төрөл"/>
+                    <column label="Эхлэх Огноо"/>
+                    <column label="Дуусах Огноо"/>
+                    <column label="Төлөх"/>
+                    <column label="Шалтгаан"/>
+                </columns>
+                <rows>
+                    <row>
+
+                        <!--todo ajilchdiin jagsaalt orj irne-->
+                        <!--todo department group hiine-->
+                    </row>
+                </rows>
+            </grid>
+            <menupopup id="editPopup">
+                <menuitem label="Detail" onClick="" image=""/>
+            </menupopup>
+        </panelchildren>
+
+    </panel>
+
+</zk>

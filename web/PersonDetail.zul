@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <panel width="100%" title="Хувийн мэдээлэл" height="100%">
+        <panelchildren>
+            <grid vflex="1">
+                <columns>
+                    <column  />
+                </columns>
+                <rows>
+                    <row height="100px" width="100%" >
+                        <cell colspan="2" height="100px">
+                            <image src="/home/tseegii/Pictures/111.jpg" width="50px" height="50px"/>
+                        </cell>
+                    </row>
+                    <row>
+                        <button id="submitted" label="Submitted" width="100%"/>
+                    </row>
+                    <row>
+                        <button id="pending" label="Pending" width="100%"/>
+                    </row>
+                    <row>
+                        <button id="drafts" label="Drafts" width="100%"/>
+                    </row>
+                    <row>
+                        <button id="rejected" label="Rejected" width="100%"/>
+                    </row>
+                    <row>
+                        <button id="delegated" label="Delegated" width="100%"/>
+                    </row>
+                    <row>
+                        <button id="sendTome" label="Send to me" width="100%"/>
+                        <!--todo supervisor deer garch irne-->
+                    </row>
+                </rows>
+            </grid>
+        </panelchildren>
+    </panel>
+</zk>

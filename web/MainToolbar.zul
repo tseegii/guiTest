@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <toolbar width="100%">
+        <hbox width="100%" widths="20%,70%,10%">
+            <div>
+                Welcome to Davaasambuu Tserenbat
+            </div>
+            <div style="display: block;visibility: hidden;width: 80%">
+
+            </div>
+            <div align="right">
+                <toolbarbutton id="notification" label="Notification"/>
+                <toolbarbutton id="logout" label="Logout"/>
+            </div>
+        </hbox>
+    </toolbar>
+</zk>

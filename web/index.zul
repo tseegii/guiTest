@@ -1,0 +1,20 @@
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <panel width="100%" height="100%" style="position: absolute;top: 0;left: 0;" border="none">
+        <panelchildren>
+            <borderlayout>
+                <north height="25px" border="none" >
+                    <include src="MainMenuBar.zul"/>
+                </north>
+                <west border="none" width="250px" splittable="true" collapsible="true">
+                    <vbox height="100%" spacing="5px">
+                        <include src="PersonDetail.zul" height="50%"/>
+                        <include src="News.zul" height="50%"/>
+                    </vbox>
+                </west>
+                <center border="none">
+                    <include id="centerInclude" src="ProbationHRPanel.zul"/>
+                </center>
+            </borderlayout>
+        </panelchildren>
+    </panel>
+</zk>

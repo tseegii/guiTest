@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+
+    <panel width="100%" height="100%" title="Ажилчид">
+
+        <toolbar>
+
+            <toolbarbutton label="Нэмэх" onClick="" image=""/>
+            <label value="Бүлэглэх : "/>
+            <combobox>
+                <comboitem label="Идэвхтэй"/>
+                <comboitem label="Идэвхгүй"/>
+                <comboitem label="Бүгд"/>
+            </combobox>
+            <!--<separator/>-->
+            <label value="Хайлт : "/>
+            <combobox name="searchField">
+                <comboitem label="Нэр"/>
+                <comboitem label="Хэлтэс"/>
+                <comboitem label="Албан тушаал"/>
+                <comboitem label="Утас"/>
+                <comboitem label="Email"/>
+            </combobox>
+            <textbox name="searchTxt" />
+            <toolbarbutton label="Шинэчлэх"/>
+        </toolbar>
+
+        <panelchildren>
+
+            <grid >
+                <columns context="editPopup">
+                    <column label="Зураг"/>
+                    <column label="Нэр"/>
+                    <column label="Хэлтэс"/>
+                    <column label="Албан тушаал"/>
+                    <column label="Утас"/>
+                    <column label="Email"/>
+                </columns>
+                <rows>
+                    <row >
+
+                        <!--todo ajilchdiin jagsaalt orj irne-->
+                        <!--todo department group hiine-->
+                    </row>
+                </rows>
+            </grid>
+                <menupopup id="editPopup">
+                    <menuitem label="Засах" onClick="" image=""/>
+                    <menuitem label="Илүү цаг" onClick="" image=""/>
+                    <menuitem label="Хүсэлт" onClick="" image=""/>
+                    <menuitem label="Нууц үг солих" onClick="" image=""/>
+                    <menuitem label="Хэрэглэгчийг хүчэнгүй болгох" onClick="" image=""/>
+                </menupopup>
+        </panelchildren>
+
+    </panel>
+
+</zk>

@@ -1,0 +1,31 @@
+<component name="libraryTable">
+  <library name="zcommon-sources">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/lib/zweb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/lib/zk.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/lib/zkplus.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/lib/zkbind.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/lib/zul.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/lib/zhtml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/lib/zel.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/lib/zcommon.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/lib/zkforge/flashchart.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/lib/theme/silvertail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/lib/theme/sapphire.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/lib/ext/commons-io.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/lib/ext/commons-fileupload.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/lib/ext/bsh.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/src/zcommon-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/src/zel-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/src/zhtml-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/src/zk-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/src/zkbind-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/src/zkplus-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/src/zul-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Downloads/zk-bin-6.5.2/dist/src/zweb-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <panel width="100%" title="Мэдээ" height="100%">
+        <panelchildren >
+            <grid vflex="1" height="100%">
+                <columns>
+                    <column label="Гарчиг" sort="auto"/>
+                    <column label="Огноо"/>
+                    <column label="Нэр"/>
+                </columns>
+                <rows>
+                    <row>
+                        <!--todo dawtalt orj irne news -->
+                    </row>
+                </rows>
+            </grid>
+        </panelchildren>
+    </panel>
+</zk>
